@@ -11,4 +11,11 @@ class Song
   def self.count
     @@count
   end
+
+  def self.genres
+    @@genres = []
+    if @@genres = genres.uniq
+    @@genres << Song.new
+  end
+  end
 end
