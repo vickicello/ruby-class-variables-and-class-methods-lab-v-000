@@ -32,8 +32,25 @@ class Song
     @@artists.each do |artist|
       list_of_artists << artist unless list_of_artists.include?(artist)
     end
+    list_of_artists
+    end
+
+    def self.genre_count
+      genres_count = {}
+      @@genres.each do |genre|
+        if genres_count[genre]
+          genres_count[genre] += 1
+        else
+          genres_count[genre] = 1
+        end
+      end
+      genres_count
+    end
+
+    
+    
   end
 
-  
+
 
 end
